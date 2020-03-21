@@ -1,17 +1,14 @@
-import React from 'react';
+import * as React from 'react';
+import { storiesOf } from '@storybook/react';
 
 const DemoButton = React.lazy(() =>
-  import('./Button.js'),
+  import('./Button'),
 );
 
-// export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
+const stories = storiesOf('Lazy loaded story', module);
 
-export const Emoji = () => (
-  <React.Suspense fallback={<div>Loading...</div>}><DemoButton/></React.Suspense>
-);
-
-
-export default {
-  title: 'Button',
-  component: Emoji,
-};
+stories.add('Base', () => (
+  <React.Suspense fallback={<div>Loading...</div>}>
+    <DemoButton />
+  </React.Suspense>
+));

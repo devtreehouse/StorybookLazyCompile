@@ -1,5 +1,5 @@
 {
-  "name": "storybookExample",
+  "name": "storybook-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,10 +14,10 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.7",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/react": "^5.3.17",
+    "@storybook/addon-actions": "5.2.0",
+    "@storybook/addon-links": "5.2.0",
+    "@storybook/addons": "5.2.0",
+    "@storybook/react": "5.2.0",
     "babel-loader": "^8.0.6",
     "lazy-compile-webpack-plugin": "^0.1.11"
   }
